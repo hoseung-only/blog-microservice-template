@@ -1,0 +1,9 @@
+# dependencies
+node_modules
+
+# related to build and deploy
+.serverless
+.build
+
+# environment variables
+env
