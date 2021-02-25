@@ -7,7 +7,8 @@
     "start": "serverless offline",
     "remove": "serverless remove",
     "format": "prettier --write 'src/**/*.ts'",
-    "test": "mocha --require ts-node/register --exit -t 5000 src/**/__test__/*.spec.ts"
+    "test": "mocha --require ts-node/register --exit -t 5000 src/**/__test__/*.spec.ts",
+    "coverage": "nyc npm run test"
   },
   "author": "Alvin Jang <hsjang.dev@gmail.com>",
   "devDependencies": {
@@ -20,6 +21,7 @@
     "@types/supertest": "^2.0.10",
     "chai": "^4.3.0",
     "mocha": "^8.2.1",
+    "nyc": "^15.1.0",
     "prettier": "^2.2.1",
     "serverless": "^2.21.1",
     "serverless-offline": "^6.8.0",
