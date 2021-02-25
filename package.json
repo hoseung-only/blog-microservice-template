@@ -7,7 +7,7 @@
     "start": "serverless offline",
     "remove": "serverless remove",
     "format": "prettier --write 'src/**/*.ts'",
-    "test": "nyc mocha --require ts-node/register --exit -t 5000 src/**/__test__/*.spec.ts"
+    "test": "nyc --exclude='src/**/__test__' mocha --require ts-node/register --exit -t 5000 src/**/__test__/*.spec.ts"
   },
   "author": "Alvin Jang <hsjang.dev@gmail.com>",
   "devDependencies": {
