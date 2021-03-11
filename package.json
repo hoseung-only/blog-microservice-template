@@ -4,7 +4,6 @@
   "main": "index.ts",
   "scripts": {
     "deploy": "serverless deploy",
-    "start": "serverless offline",
     "remove": "serverless remove",
     "format": "prettier --write 'src/**/*.ts'",
     "test": "mocha --require ts-node/register --exit -t 5000 src/**/__test__/*.spec.ts",
